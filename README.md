@@ -5,6 +5,8 @@ Official landing page, Google AdMob `app-ads.txt`, Privacy Policy, Terms of Serv
 - **Repository**: `https://github.com/jinimediainc-crypto/probill-website`
 - **Package ID**: `com.jinimedia.probill_invoice_estimate`
 - **Publisher ID**: `pub-5655276215867871`
+- **Developer / Support Email**: `jinimedia.inc@gmail.com`
+- **Company**: Jini Media Inc.
 
 ---
 
@@ -15,4 +17,5 @@ Official landing page, Google AdMob `app-ads.txt`, Privacy Policy, Terms of Serv
 - `terms-of-use.html`: In-App Purchases (StoreKit / Google Play Billing) Terms of Service
 - `data-safety.html`: Data Collection & SQLite Storage Nutrition Label
 - `app-ads.txt`: Google AdMob Authorized Digital Sellers verification
+- `.nojekyll`: GitHub Pages static asset routing bypass
 - `assets/`: High-res App Icon (512x512), Feature Graphic (1024x500), and Marketing Mockups
