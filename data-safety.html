@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Safety & Transparency - ProBill</title>
+  <meta name="description" content="Google Play Data Safety and Apple Privacy Nutrition Label breakdown for ProBill: Estimates & Invoices.">
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+  </style>
+</head>
+<body class="bg-slate-900 text-slate-100 antialiased min-h-screen flex flex-col">
+
+  <header class="border-b border-slate-800 bg-slate-900/90 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2.5 group">
+        <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-blue-600 to-cyan-400 flex items-center justify-center text-white font-black shadow-lg shadow-blue-500/20 group-hover:scale-105 transition">
+          ⚡
+        </div>
+        <span class="font-black text-lg text-white tracking-tight">ProBill</span>
+      </a>
+      <div class="flex items-center gap-4 text-xs font-bold text-slate-400">
+        <a href="index.html" class="hover:text-white transition">Home</a>
+        <a href="privacy-policy.html" class="hover:text-white transition">Privacy</a>
+        <a href="terms-of-use.html" class="hover:text-white transition">Terms</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-1 max-w-4xl mx-auto px-4 sm:px-6 py-12 space-y-8 leading-relaxed text-slate-300 text-sm">
+    <div class="space-y-3 border-b border-slate-800 pb-6">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-black uppercase tracking-wider">
+        <span>🛡️</span> Google Play & Apple App Store Certification
+      </div>
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Data Safety Nutrition Label</h1>
+      <p class="text-xs text-slate-500">Google Play Data Safety Section & Apple App Privacy Standard</p>
+    </div>
+
+    <!-- TABLE -->
+    <div class="overflow-x-auto rounded-2xl border border-slate-800">
+      <table class="w-full text-left text-xs">
+        <thead class="bg-slate-800/80 text-slate-300 font-black uppercase tracking-wider">
+          <tr>
+            <th class="p-4">Data Category</th>
+            <th class="p-4">Collected by Developer?</th>
+            <th class="p-4">Shared with 3rd Parties?</th>
+            <th class="p-4">Storage Mechanism</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-800 text-slate-400">
+          <tr>
+            <td class="p-4 font-bold text-white">Invoices, Estimates & Line Items</td>
+            <td class="p-4 text-emerald-400 font-bold">❌ No (Zero Collection)</td>
+            <td class="p-4 text-emerald-400 font-bold">❌ No</td>
+            <td class="p-4">100% Local On-Device SQLite (Encrypted)</td>
+          </tr>
+          <tr>
+            <td class="p-4 font-bold text-white">Client Names, Phones & Addresses</td>
+            <td class="p-4 text-emerald-400 font-bold">❌ No (Zero Collection)</td>
+            <td class="p-4 text-emerald-400 font-bold">❌ No</td>
+            <td class="p-4">100% Local On-Device SQLite</td>
+          </tr>
+          <tr>
+            <td class="p-4 font-bold text-white">Tax IDs (GSTIN, VAT, EIN)</td>
+            <td class="p-4 text-emerald-400 font-bold">❌ No (Zero Collection)</td>
+            <td class="p-4 text-emerald-400 font-bold">❌ No</td>
+            <td class="p-4">100% Local On-Device SQLite</td>
+          </tr>
+          <tr>
+            <td class="p-4 font-bold text-white">Cloud Backups</td>
+            <td class="p-4 text-emerald-400 font-bold">❌ No (User Cloud Only)</td>
+            <td class="p-4 text-emerald-400 font-bold">❌ No</td>
+            <td class="p-4">User's Google Drive / Apple iCloud direct OAuth</td>
+          </tr>
+          <tr>
+            <td class="p-4 font-bold text-white">Advertising Device ID (Free Tier)</td>
+            <td class="p-4 text-amber-400 font-bold">⚠️ Handled by AdMob SDK</td>
+            <td class="p-4 text-slate-400">Google AdMob Network</td>
+            <td class="p-4">Anonymized ad delivery (0 in Pro tier)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- PURGE CARD -->
+    <div class="p-5 rounded-2xl bg-emerald-950/30 border border-emerald-800/50 space-y-2">
+      <h3 class="font-black text-emerald-400 text-sm">✅ Account Deletion & Data Purge (Apple 5.1.1v)</h3>
+      <p class="text-xs text-emerald-300/80">
+        Users can instantly purge all local data by tapping <strong>Settings ➔ Delete Account & Erase All Data</strong>. The app immediately drops all SQLite tables and clears preferences.
+      </p>
+    </div>
+  </main>
+
+  <footer class="border-t border-slate-800 bg-slate-950 py-8 text-center text-xs text-slate-500">
+    <div class="max-w-5xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p>© 2026 ProBill: Estimates & Invoices. All rights reserved.</p>
+      <div class="flex items-center gap-4">
+        <a href="privacy-policy.html" class="hover:text-slate-300 transition">Privacy Policy</a>
+        <a href="terms-of-use.html" class="hover:text-slate-300 transition">Terms of Use</a>
+        <a href="data-safety.html" class="text-slate-300 font-bold hover:underline">Data Safety</a>
+        <a href="app-ads.txt" class="hover:text-slate-300 transition">app-ads.txt</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

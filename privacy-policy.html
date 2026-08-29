@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - ProBill: Estimates & Invoices</title>
+  <meta name="description" content="Privacy Policy for ProBill: Estimates & Invoices. 100% offline, user-sovereign on-device SQLite storage with zero developer tracking.">
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+  </style>
+</head>
+<body class="bg-slate-900 text-slate-100 antialiased min-h-screen flex flex-col">
+
+  <header class="border-b border-slate-800 bg-slate-900/90 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2.5 group">
+        <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-blue-600 to-cyan-400 flex items-center justify-center text-white font-black shadow-lg shadow-blue-500/20 group-hover:scale-105 transition">
+          ⚡
+        </div>
+        <span class="font-black text-lg text-white tracking-tight">ProBill</span>
+      </a>
+      <div class="flex items-center gap-4 text-xs font-bold text-slate-400">
+        <a href="index.html" class="hover:text-white transition">Home</a>
+        <a href="terms-of-use.html" class="hover:text-white transition">Terms</a>
+        <a href="data-safety.html" class="hover:text-white transition">Data Safety</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-1 max-w-4xl mx-auto px-4 sm:px-6 py-12 space-y-8 leading-relaxed text-slate-300 text-sm">
+    <div class="space-y-3 border-b border-slate-800 pb-6">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-black uppercase tracking-wider">
+        <span>🔒</span> 100% User-Sovereign Data Guarantee
+      </div>
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Privacy Policy</h1>
+      <p class="text-xs text-slate-500">Effective Date: August 29, 2026 • Version 1.0</p>
+    </div>
+
+    <div class="p-5 rounded-2xl bg-blue-950/40 border border-blue-800/50 space-y-2">
+      <h2 class="font-black text-blue-300 text-base flex items-center gap-2">
+        <span>🛡️</span> Privacy at a Glance
+      </h2>
+      <p class="text-xs text-blue-200/90 leading-relaxed">
+        <strong>ProBill: Estimates & Invoices</strong> is engineered around a strict <strong>zero-knowledge, offline-first architecture</strong>. We do not operate external database servers, we do not require account creation, and we do not collect, read, or sell your invoices, estimates, client contacts, or financial figures. Everything is processed and stored locally on your device.
+      </p>
+    </div>
+
+    <section class="space-y-3">
+      <h2 class="text-lg font-black text-white">1. Local On-Device Storage (No Developer Cloud)</h2>
+      <p>
+        All business profiles, customer ledgers, line items, pricing catalogs, tax identifiers (e.g. GSTIN, VAT ID, EIN), signatures, and generated PDF receipts are stored strictly inside an encrypted local SQLite database (<code>probill_sqlite_v3.db</code>) on your physical Android or iOS device.
+      </p>
+      <p>
+        We do not maintain developer-hosted servers or cloud databases capable of accessing, synchronizing, or viewing your commercial documents.
+      </p>
+    </section>
+
+    <section class="space-y-3">
+      <h2 class="text-lg font-black text-white">2. Bring Your Own Cloud (BYOC) Backup & Sync</h2>
+      <p>
+        If you choose to enable cloud backups, you connect directly to your personal or enterprise cloud accounts:
+      </p>
+      <ul class="list-disc pl-5 space-y-1.5 text-xs text-slate-400">
+        <li><strong>Google Drive:</strong> Authenticates directly with Google OAuth 2.0 to write encrypted database snapshots to your private <code>/ProBill_Backups/</code> folder.</li>
+        <li><strong>Apple iCloud:</strong> Stores snapshots in your native iCloud Documents container (<code>iCloud.com.probill.app</code>) associated with your Apple ID.</li>
+        <li><strong>Dropbox & Microsoft OneDrive:</strong> Connects via user-authorized PKCE OAuth tokens to your own storage.</li>
+      </ul>
+      <p>
+        ProBill never intercepts or routes these backups through third-party relays.
+      </p>
+    </section>
+
+    <section class="space-y-3">
+      <h2 class="text-lg font-black text-white">3. Advertising & Analytics (Free Tier)</h2>
+      <p>
+        For free-tier users, the application integrates <strong>Google AdMob</strong> to display adaptive banner ads, capped interstitials, and rewarded video ads.
+      </p>
+      <p>
+        AdMob may collect anonymized device identifiers (e.g. Google Advertising ID / IDFA), IP addresses, and diagnostic crash analytics in accordance with Google's Privacy Policy. In the EEA and UK, consent is managed via the Google User Messaging Platform (UMP) SDK.
+      </p>
+      <p class="text-xs text-emerald-400 font-bold">
+        💎 Pro Subscribers: Subscribing to Pro completely detaches the Google Mobile Ads SDK, resulting in 100% ad suppression and zero ad network telemetry.
+      </p>
+    </section>
+
+    <section class="space-y-3">
+      <h2 class="text-lg font-black text-white">4. Hardware Permissions & Device Rationales</h2>
+      <ul class="list-disc pl-5 space-y-2 text-xs text-slate-400">
+        <li><strong>Bluetooth (ESC/POS Printing):</strong> Used exclusively to discover and print receipt layouts to 58mm & 80mm wireless thermal printers.</li>
+        <li><strong>Camera & Photos:</strong> Used only when you choose to attach job site photos or import your company logo.</li>
+        <li><strong>Notifications:</strong> Used for optional on-device local reminders (e.g. Afternoon Invoicing at 2:00 PM and Evening Reconciliation at 7:30 PM). No remote push notifications are broadcasted.</li>
+      </ul>
+    </section>
+
+    <section class="space-y-3">
+      <h2 class="text-lg font-black text-white">5. 1-Tap Data Purge & Account Deletion</h2>
+      <p>
+        In strict compliance with <strong>Apple App Store Review Guideline 5.1.1(v)</strong> and GDPR:
+      </p>
+      <p>
+        You can immediately and irreversibly delete all stored business records, client profiles, item catalogs, and database tables at any time by navigating to <strong>Settings ➔ Delete Account & Erase All Data</strong>. This permanently destroys the local SQLite database from your hardware.
+      </p>
+    </section>
+
+    <section class="space-y-3 border-t border-slate-800 pt-6">
+      <h2 class="text-lg font-black text-white">6. Contact Information</h2>
+      <p>
+        If you have any questions or feedback regarding this Privacy Policy, please contact our privacy compliance team at:
+      </p>
+      <p class="font-mono text-xs text-blue-400">
+        📧 Email: privacy@probill.app / feedback@probill.app<br>
+        🌐 Repository: https://github.com/jinimediainc-crypto/probill-website
+      </p>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-800 bg-slate-950 py-8 text-center text-xs text-slate-500">
+    <div class="max-w-5xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p>© 2026 ProBill: Estimates & Invoices. All rights reserved.</p>
+      <div class="flex items-center gap-4">
+        <a href="privacy-policy.html" class="text-slate-300 font-bold hover:underline">Privacy Policy</a>
+        <a href="terms-of-use.html" class="hover:text-slate-300 transition">Terms of Use</a>
+        <a href="data-safety.html" class="hover:text-slate-300 transition">Data Safety</a>
+        <a href="app-ads.txt" class="hover:text-slate-300 transition">app-ads.txt</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,4 @@
+﻿# Google AdMob Authorized Digital Sellers (app-ads.txt)
+# ProBill: Estimates & Invoices (com.probill.invoicing)
+# Publisher ID: pub-5655276215867871
+google.com, pub-5655276215867871, DIRECT, f08c47fec0942fa0
